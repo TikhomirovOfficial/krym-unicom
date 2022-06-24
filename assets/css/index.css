@@ -1,0 +1,368 @@
+body {
+    font-family: Avenir, sans-serif;
+}
+
+.wrapper {
+    max-width: 1409px;
+    margin: 0 auto;
+}
+
+.present {
+    background: url("../img/main_background_electrik.png") no-repeat;
+    background-size: 100%;
+    padding-bottom: 35vh;
+}
+
+@media (min-width: 1900px) {
+    .present {
+        min-height: 100vh;
+    }
+}
+
+@media (max-width: 1675px) {
+    .wrapper {
+        max-width: 1150px;
+    }
+}
+
+.icon-shadow {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0px 0px 30px rgba(229, 150, 95, 0.75);
+    background: linear-gradient(239.97deg, #FF8F45 11.29%, #F9C066 86.44%);
+    border-radius: 50%;
+}
+
+header {
+    padding-top: 40px;
+}
+
+.present__description p {
+    font-size: 14px;
+    max-width: 450px;
+}
+
+.present__nav {
+    font-size: 14px;
+}
+
+.present__callback b {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.present__callback p {
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.present__callback .icon-shadow {
+    width: 49px;
+    height: 49px;
+}
+
+.present__main {
+    margin-top: 10vh;
+    margin-bottom: 8vh;
+    gap: 7vh;
+}
+
+.present__main h1 {
+    font-size: 48px;
+    max-width: 810px;
+}
+
+.present__button {
+    background: linear-gradient(180deg, #5C80E3 0%, #335BD9 100%);
+    box-shadow: 0px 0px 35px rgba(52, 92, 218, 0.5);
+    border-radius: 100px;
+    padding: 28px 62px;
+    font-size: 16px;
+}
+
+.present__button:hover {
+    background: linear-gradient(180deg, #4772EA 0%, #1848DE 100%);
+}
+
+.present__features {
+    gap: 100px;
+}
+
+.present__features .icon-shadow {
+    width: 90px;
+    height: 90px;
+}
+
+.present__features-item:first-child p {
+    max-width: 260px;
+}
+
+.present__features-item:nth-child(2) p {
+    max-width: 280px;
+}
+
+.present__features-item:nth-child(3) p {
+    max-width: 330px;
+}
+
+.present-menu__icon {
+    display: none;
+}
+
+@media (max-width: 1680px) {
+    .present__main h1 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .present__button {
+        padding: 24px 40px;
+    }
+
+    .present__features-item .icon-shadow {
+        height: 80px;
+        width: 80px;
+    }
+
+    .present__nav {
+        gap: 25px;
+    }
+
+    .present__description p {
+        max-width: 390px;
+        font-size: 12px;
+    }
+
+    .present__callback b {
+        font-size: 17px;
+        letter-spacing: unset;
+    }
+}
+
+@media (max-width: 1300px) {
+    .present__description p {
+        font-size: 10px;
+        max-width: 320px;
+    }
+
+    .present__callback .icon-shadow {
+        width: 40px;
+        height: 40px;
+    }
+
+    .present__nav {
+        font-size: 12px;
+        gap: 12px;
+    }
+
+    .wrapper {
+        max-width: 900px;
+    }
+
+    .present {
+        background-size: 110%;
+    }
+
+    .present__callback {
+        gap: 10px;
+    }
+
+    .present__callback p {
+        font-size: 12px;
+    }
+
+    .present__callback b {
+        font-size: 16px;
+    }
+
+    .present__button {
+        padding: 15px 25px;
+        font-size: 14px;
+    }
+
+    .present__features-item img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .present__features .icon-shadow {
+        width: 60px;
+        height: 60px;
+    }
+
+    .present__features-item p {
+        font-size: 12px;
+    }
+
+    .present__features {
+        gap: 60px;
+    }
+
+    .present__features-item:first-child p {
+        max-width: 220px;
+    }
+
+    .present__features-item:nth-child(2) p {
+        max-width: 240px;
+    }
+
+    .present__features-item:nth-child(3) p {
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .wrapper {
+        max-width: 750px;
+    }
+    .present-menu__icon {
+        top: 48px;
+        right: 0;
+    }
+    .present {
+        background: url("../img/main_background_elecktrik_tablet.png") no-repeat;
+        background-size: 100%;
+        background-position-y: bottom;
+    }
+    header {
+        align-items: flex-start !important;
+    }
+    .present__nav {
+        display: none;
+    }
+
+    .present__button {
+        padding: 28px 62px;
+        font-size: 16px;
+    }
+
+    .present__features {
+        flex-direction: column;
+        gap: 36px;
+    }
+
+    .present__features-item {
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .present-menu__icon {
+        display: block;
+        top: 48px;
+        right: 45px;
+    }
+    .present-menu__icon-lie {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .present__description p {
+        max-width: 270px;
+    }
+    .present__callback {
+        margin-top: 3px;
+    }
+}
+
+@media (max-width: 830px) {
+    .wrapper {
+        max-width: 600px;
+    }
+
+    .present__main h1 {
+        font-size: 35px;
+    }
+
+    .present__button {
+        padding: 22px 40px;
+    }
+}
+
+@media (max-width: 685px) {
+    .present {
+        background-position-y: unset;
+    }
+
+    .wrapper {
+        max-width: 500px;
+    }
+
+    .present__callback b {
+        font-size: 14px;
+    }
+
+    .present__description p {
+        font-size: 9px;
+        max-width: 240px;
+    }
+
+    .present__callback img {
+        width: 20px;
+    }
+
+    .present__callback .icon-shadow {
+        width: 32px;
+        height: 32px;
+    }
+
+    .present__main h1 {
+        font-size: 33px;
+        line-height: 39px;
+    }
+}
+@media (max-width: 613px) {
+    .wrapper {
+        max-width: 430px;
+    }
+    header {
+        align-items: flex-start !important;
+    }
+
+    .present__callback {
+        display: none;
+    }
+    .present__main h1 {
+        font-size: 25px;
+        line-height: 32px;
+    }
+    .present__button {
+        padding: 19px 36px;
+    }
+    .present__features .icon-shadow {
+        width: 50px;
+        height: 50px;
+    }
+}
+@media (max-width: 530px)  {
+    .present {
+        background-size: 115%;
+    }
+}
+@media (max-width: 478px) {
+    .present {
+        background-size: 145%;
+    }
+    .wrapper {
+        max-width: 350px;
+    }
+}
+@media (max-width: 400px) {
+    .present {
+        background-size: 160%;
+    }
+    .wrapper {
+        max-width: 290px;
+    }
+    .present__features-item p {
+        max-width: 218px !important;
+    }
+}
+@media (max-width: 346px) {
+    .present {
+        background: url("../img/main_bg_mobile.png") no-repeat;
+        background-size: 100%;
+        background-position-y: -110px;
+    }
+}
