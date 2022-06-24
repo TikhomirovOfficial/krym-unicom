@@ -107,7 +107,7 @@ header {
     max-width: 330px;
 }
 
-.present-menu__icon {
+.present-menu__iconб, .present-menu__icon-lie {
     display: none;
 }
 
@@ -254,6 +254,7 @@ header {
         right: 45px;
     }
     .present-menu__icon-lie {
+        display: block;
         opacity: 0;
         visibility: hidden;
     }
