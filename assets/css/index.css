@@ -42,6 +42,7 @@ header {
 .present__description p {
     font-size: 14px;
     max-width: 450px;
+    line-height: 17px;
 }
 
 .present__nav {
@@ -66,11 +67,13 @@ header {
 .present__main {
     margin-top: 10vh;
     margin-bottom: 8vh;
+
     gap: 7vh;
 }
 
 .present__main h1 {
     font-size: 48px;
+    line-height: 62px;
     max-width: 810px;
 }
 
@@ -94,7 +97,9 @@ header {
     width: 90px;
     height: 90px;
 }
-
+.present__features-item p {
+    line-height: 22px;
+}
 .present__features-item:first-child p {
     max-width: 260px;
 }
@@ -221,6 +226,9 @@ header {
         top: 48px;
         right: 0;
     }
+    .present__main h1 {
+        line-height: 52px;
+    }
     .present {
         background: url("../img/main_background_elecktrik_tablet.png") no-repeat;
         background-size: 100%;
@@ -261,6 +269,7 @@ header {
 
     .present__description p {
         max-width: 270px;
+        line-height: 12px;
     }
     .present__callback {
         margin-top: 3px;
@@ -310,7 +319,6 @@ header {
 
     .present__main h1 {
         font-size: 33px;
-        line-height: 39px;
     }
 }
 @media (max-width: 613px) {
@@ -359,6 +367,9 @@ header {
     .present__features-item p {
         max-width: 218px !important;
     }
+    .present__button {
+        width: 100%;
+    }
 }
 @media (max-width: 346px) {
     .present {
@@ -366,4 +377,9 @@ header {
         background-size: 100%;
         background-position-y: -110px;
     }
+    .present__description p {
+        font-size: 8px;
+        line-height: 9px;
+    }
+
 }
