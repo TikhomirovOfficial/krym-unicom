@@ -165,6 +165,36 @@ header {
     max-width: 690px;
     margin-top: 40px;
 }
+.work-steps {
+    padding: 20vh 0;
+}
+.work-steps__item h1 {
+    font-size: 160px;
+    color: #FF8F45;
+}
+.work-steps__item .icon-shadow {
+    width: 112px;
+    height: 112px;
+}
+.work-steps__list {
+    max-width: 83%;
+}
+.work-steps__item:nth-child(even) {
+    align-self: flex-end;
+}
+.work-steps__item h2, .work-steps__item p  {
+    max-width: 330px;
+}
+.work-steps__item span {
+    display: block;
+    margin-top: 5px;
+}
+.work-steps__list {
+    background: url("../img/work-steps_bg.svg") no-repeat;
+    background-size: 45%;
+    background-position-y: 35%;
+    background-position-x: 45%;
+}
 @media (max-width: 1730px) {
     .challenges {
         padding: 100px 0;
@@ -545,6 +575,7 @@ header {
 @media (max-width: 400px) {
     .present {
         background-size: 160%;
+        padding-bottom: 15vh;
     }
     .wrapper {
         max-width: 290px;
