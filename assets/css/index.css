@@ -93,7 +93,7 @@ header {
     gap: 100px;
 }
 
-.present__features .icon-shadow {
+.present__features .icon-shadow, .principles__content .icon-shadow {
     width: 90px;
     height: 90px;
 }
@@ -116,6 +116,42 @@ header {
     display: none;
 }
 
+.section__title {
+    font-size: 40px;
+    max-width: 643px;
+}
+.principles {
+    padding-top: 2vh;
+}
+.principles__content {
+    margin-top: 75px;
+
+}
+.principles-list__item {
+    min-height: 125px;
+}
+.principles-list__item h2 {
+    font-size: 24px;
+    margin-top: 10px;
+    line-height: 31px;
+    max-width: 420px;
+}
+.principles-list__item p {
+    max-width: 630px;
+    font-size: 16px;
+}
+.principles-list__item .icon-shadow {
+    position: relative;
+}
+.principles-list__item:not(:last-child) .icon-shadow:after {
+    content: "";
+    position: absolute;
+    background: #FF8F45;
+    height: 90px;
+    top: 100%;
+    left: 50%;
+    width: 1px;
+}
 @media (max-width: 1680px) {
     .present__main h1 {
         font-size: 40px;
@@ -126,7 +162,7 @@ header {
         padding: 24px 40px;
     }
 
-    .present__features-item .icon-shadow {
+    .present__features-item .icon-shadow, .principles-list__item .icon-shadow {
         height: 80px;
         width: 80px;
     }
@@ -143,6 +179,22 @@ header {
     .present__callback b {
         font-size: 17px;
         letter-spacing: unset;
+    }
+    .principles__image {
+        width: 400px;
+    }
+    .principles-list__item img {
+        width: 40px;
+        height: 40px;
+    }
+    .priciples-list {
+        gap: 10px;
+    }
+    .principles-list__item .flex-column {
+        gap: 10px;
+    }
+    .principles-list__item p {
+        max-width: 500px;
     }
 }
 
@@ -187,12 +239,12 @@ header {
         font-size: 14px;
     }
 
-    .present__features-item img {
+    .present__features-item img, .principles-list__item img {
         width: 25px;
         height: 25px;
     }
 
-    .present__features .icon-shadow {
+    .present__features .icon-shadow, .principles-list__item .icon-shadow {
         width: 60px;
         height: 60px;
     }
@@ -200,7 +252,28 @@ header {
     .present__features-item p {
         font-size: 12px;
     }
+    .principles-list__item h2 {
+        font-size: 16px;
+        max-width: 330px;
+        line-height: 20px;
+    }
+    .section__title {
+        font-size: 33px;
+    }
+    .principles-list__item {
+        min-height: 80px;
+    }
+    .principles-list__item .flex-column {
+        gap: 5px;
+    }
 
+    .principles-list__item p {
+        max-width: 370px;
+        font-size: 10px;
+    }
+    .principles__image {
+        width: 320px;
+    }
     .present__features {
         gap: 60px;
     }
@@ -255,7 +328,9 @@ header {
         align-items: center;
         flex-direction: row;
     }
-
+    .principles__image {
+        width: 250px;
+    }
     .present-menu__icon {
         display: block;
         top: 48px;
@@ -280,11 +355,16 @@ header {
     .wrapper {
         max-width: 600px;
     }
-
+    .principles__image {
+        display: none;
+    }
     .present__main h1 {
         font-size: 35px;
     }
-
+    .principles-list__item p {
+        max-width: 510px;
+        font-size: 14px;
+    }
     .present__button {
         padding: 22px 40px;
     }
@@ -294,7 +374,15 @@ header {
     .present {
         background-position-y: unset;
     }
-
+    .principles-list__item p {
+        font-size: 12px;
+        max-width: 400px;
+    }
+    .principles-list__item h2 {
+        font-size: 15px;
+        line-height: 19px;
+        max-width: 270px;
+    }
     .wrapper {
         max-width: 500px;
     }
@@ -328,7 +416,9 @@ header {
     header {
         align-items: flex-start !important;
     }
-
+    .principles-list__item p {
+        max-width: 300px;
+    }
     .present__callback {
         display: none;
     }
@@ -339,7 +429,7 @@ header {
     .present__button {
         padding: 19px 36px;
     }
-    .present__features .icon-shadow {
+    .present__features .icon-shadow, .principles-list__item .icon-shadow {
         width: 50px;
         height: 50px;
     }
@@ -355,6 +445,24 @@ header {
     }
     .wrapper {
         max-width: 350px;
+    }
+    .section__title {
+        font-size: 22px;
+    }
+    .principles__content {
+        margin-top: 40px;
+    }
+    .principles-list__item p, .principles-list__item h2 {
+        max-width: 200px;
+    }
+    .principles-list__item:not(:last-child) .icon-shadow:after {
+        content: "";
+        position: absolute;
+        background: #FF8F45;
+        height: 105px;
+        top: 100%;
+        left: 50%;
+        width: 1px;
     }
 }
 @media (max-width: 400px) {
