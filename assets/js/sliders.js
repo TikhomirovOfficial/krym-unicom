@@ -5,13 +5,8 @@ function slickify() {
             infinite: true,
             speed: 300,
             slidesToShow: 1,
+            appendArrows: $('.btn'),
             responsive: [
-                {
-                    breakpoint: 1000,
-                    settings: {
-
-                    }
-                },
                 {
                     breakpoint: 600,
                     settings: {
