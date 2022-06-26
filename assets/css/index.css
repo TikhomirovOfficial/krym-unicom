@@ -10,12 +10,14 @@ body {
 .present {
     background: url("../img/main_background_electrik.png") no-repeat;
     background-size: 100%;
-    padding-bottom: 35vh;
+    padding-bottom: 200px;
+    position: relative;
 }
+
 
 @media (min-width: 1900px) {
     .present {
-        min-height: 100vh;
+
     }
 }
 
@@ -65,10 +67,10 @@ header {
 }
 
 .present__main {
-    margin-top: 10vh;
-    margin-bottom: 8vh;
+    margin-top: 80px;
+    margin-bottom: 70px;
 
-    gap: 7vh;
+    gap: 50px;
 }
 
 .present__main h1 {
@@ -121,8 +123,8 @@ header {
     max-width: 643px;
 }
 .principles {
-    padding-top: 2vh;
-    padding-bottom: 10vh;
+    padding-top: 30px;
+    padding-bottom: 80px;
 }
 .principles__content {
     margin-top: 75px;
@@ -205,6 +207,13 @@ header {
         font-size: 40px;
         line-height: 45px;
     }
+    .work-steps__list {
+        background-image: url("../img/work-steps-bg_tablet.svg");
+        background-size: 27%;
+        background-position-x: 40%;
+        background-position-y: 50%;
+
+    }
     .challenges {
         padding: 150px 0;
     }
@@ -260,6 +269,10 @@ header {
         font-size: 10px;
         max-width: 320px;
     }
+    .work-steps__list {
+        max-width: unset;
+        background-size: 30%;
+    }
     .challenges__img {
         width: 350px;
     }
@@ -278,7 +291,7 @@ header {
     }
 
     .present {
-        background-size: 110%;
+        background-size: 117%;
     }
 
     .present__callback {
@@ -354,12 +367,15 @@ header {
         max-width: 246px;
     }
     .challenges {
-        background-size: 125%;
+        background-size: 100%;
     }
 }
 @media (max-width: 1070px) {
+    .present {
+        background-size: 140%;
+    }
     .challenges {
-        background-size: 150%;
+        background-size: 110%;
     }
 }
 .challenges__img-tablet {
@@ -368,6 +384,9 @@ header {
 @media (max-width: 1000px) {
     .challenges .section__title {
         max-width: unset;
+    }
+    .challenges {
+        background-size: 140%;
     }
     .challenges__img {
         display: none;
@@ -441,12 +460,17 @@ header {
     .wrapper {
         max-width: 600px;
     }
+    .work-steps__list {
+        background-size: 42%;
+        background-position-y: 45%;
+    }
     .challenges__img-tablet {
         display: none;
     }
     .challenges {
-        background-size: 175%;
+        background-size: 160%;
     }
+
     .principles__image {
         display: none;
     }
@@ -466,11 +490,27 @@ header {
    .challenges .section__title {
        font-size: 22px;
    }
+    .work-steps__item h1{
+        font-size: 100px;
+    }
+    .work-steps__item .icon-shadow {
+        width: 71px;
+        height: 71px;
+    }
+    .work-steps__item img {
+        width: 45px;
+        height: 45px;
+    }
+    .work-steps__item h2 {
+        font-size: 18px;
+        max-width: 250px;
+    }
     .challenges__content p {
         font-size: 18px;
     }
     .present {
         background-position-y: unset;
+        padding-bottom: 100px;
     }
     .principles-list__item p {
         font-size: 12px;
@@ -571,11 +611,15 @@ header {
         left: 50%;
         width: 1px;
     }
+    .work-steps {
+        padding: 20px 0;
+    }
 }
 @media (max-width: 400px) {
     .present {
         background-size: 160%;
         padding-bottom: 15vh;
+        background: url("../img/main_bg_mobile.png") no-repeat;
     }
     .wrapper {
         max-width: 290px;
