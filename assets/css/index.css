@@ -10,8 +10,7 @@ body {
 .present {
     background: url("../img/main_background_electrik.png") no-repeat;
     background-size: 100%;
-    padding-bottom: 200px;
-    position: relative;
+    padding-bottom: 240px;
 }
 
 
@@ -22,9 +21,7 @@ body {
 }
 
 @media (max-width: 1675px) {
-    .wrapper {
-        max-width: 1150px;
-    }
+
 }
 
 .icon-shadow {
@@ -191,6 +188,35 @@ header {
     display: block;
     margin-top: 5px;
 }
+.services {
+    padding: 150px 0;
+}
+.services-list {
+    margin-top: 75px;
+    gap: 20px;
+}
+.services-block {
+    border-radius: 30px;
+    width: 690px;
+    padding: 20px;
+    box-shadow: 0px 27px 30px rgba(0, 7, 16, 0.05),
+    0px 8.13971px 21.103px rgba(0, 7, 16, 0.0456112),
+    0px 3.38082px 8.76509px rgba(0, 7, 16, 0.035),
+    0px 1.22278px 3.17016px rgba(0, 7, 16, 0.0243888);
+}
+.services-list__item {
+    gap: 40px;
+
+}
+
+.services-list__item img {
+    border-radius: 30px;
+}
+.services-list__item p {
+    max-width: 400px;
+    font-size: 22px;
+    line-height: 35px;
+}
 .work-steps__list {
     background: url("../img/work-steps_bg.svg") no-repeat;
     background-size: 45%;
@@ -203,6 +229,24 @@ header {
     }
 }
 @media (max-width: 1680px) {
+    .wrapper {
+        max-width: 1150px;
+    }
+    .slick-list {
+        padding: 40px 20px !important;
+    }
+    .services-list {
+        gap: 40px;
+    }
+    .services-list__item p {
+        font-size: 18px;
+    }
+    .services-list__item img {
+        width: 150px;
+    }
+    .services-block {
+        width: 550px;
+    }
     .present__main h1 {
         font-size: 40px;
         line-height: 45px;
@@ -268,6 +312,13 @@ header {
     .present__description p {
         font-size: 10px;
         max-width: 320px;
+    }
+    .services-block {
+        width: 400px;
+    }
+    .services-block p {
+        font-size: 14px;
+        line-height: 20px;
     }
     .work-steps__list {
         max-width: unset;
@@ -390,6 +441,15 @@ header {
     }
     .challenges__img {
         display: none;
+    }
+    .services-block {
+        width: 650px;
+    }
+
+    .services-list__item p {
+        max-width: 400px;
+        font-size: 22px;
+        line-height: 35px;
     }
     .challenges__img-tablet {
         display: block;
@@ -546,11 +606,26 @@ header {
     .present__main h1 {
         font-size: 33px;
     }
+    .work-steps__list {
+        background-size: 35%;
+    }
 }
 @media (max-width: 613px) {
     .wrapper {
         max-width: 430px;
     }
+    .work-steps__list {
+        background-size: 61%;
+        background-position-y: 40% !important;
+        gap: 30px;
+        background: url("../img/work-steps-bg-mobile.svg") no-repeat;
+        background-position-x: 65%;
+    }
+
+    .work-steps__item {
+        align-self: unset !important;
+    }
+
     .challenges {
         background-size: 230%;
     }
@@ -587,6 +662,9 @@ header {
     .challenges {
         background-size: 310%;
     }
+    .work-steps__list {
+        background-position-x: 95%;
+    }
     .present {
         background-size: 145%;
     }
@@ -617,9 +695,13 @@ header {
 }
 @media (max-width: 400px) {
     .present {
-        background-size: 160%;
-        padding-bottom: 15vh;
+        background-size: 100% !important;
+        padding-bottom: 100px;
+        background-position-y: -20vh !important;
         background: url("../img/main_bg_mobile.png") no-repeat;
+    }
+    .work-steps__item h2 {
+        line-height: 23px;
     }
     .wrapper {
         max-width: 290px;
@@ -633,11 +715,18 @@ header {
     .present__button {
         width: 100%;
     }
+    .principles {
+        padding-bottom: 0;
+    }
+    .work-steps__item p {
+        font-size: 14px;
+        line-height: 19px;
+    }
 }
 @media (max-width: 346px) {
     .challenges {
         background: url("../img/challenges_bg-mobile.jpg") no-repeat;
-        background-size: 130%;
+        background-size: 100%;
     }
     .present {
         background: url("../img/main_bg_mobile.png") no-repeat;
