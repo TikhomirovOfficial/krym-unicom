@@ -188,6 +188,7 @@ header {
     display: block;
     margin-top: 5px;
 }
+
 .services {
     padding: 150px 0;
 }
@@ -199,10 +200,15 @@ header {
     border-radius: 30px;
     width: 690px;
     padding: 20px;
-    box-shadow: 0px 27px 30px rgba(0, 7, 16, 0.05),
-    0px 8.13971px 21.103px rgba(0, 7, 16, 0.0456112),
-    0px 3.38082px 8.76509px rgba(0, 7, 16, 0.035),
+    border: 1px solid transparent;
+    box-shadow: 0px 10px 20px rgba(0, 7, 16, 0.03),
+    0px 8.13971px 5.103px rgba(0, 7, 16, 0.0256112),
+    0px 3.38082px 4.76509px rgba(0, 7, 16, 0.035),
     0px 1.22278px 3.17016px rgba(0, 7, 16, 0.0243888);
+}
+.services-block:hover {
+    box-shadow: unset;
+    border: 1px solid #5C80E3;
 }
 .services-list__item {
     gap: 40px;
@@ -432,9 +438,51 @@ header {
 .challenges__img-tablet {
     display: none;
 }
+.swiper {
+    display: none;
+}
+.bullet {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid black;
+
+}
+.bullet:not(:last-child) {
+    margin-right: 14px;
+}
+.active-bullet {
+    background: linear-gradient(180deg, #5C80E3 0%, #335BD9 100%);
+}
+.services-slider-mobile {
+    display: none;
+}
+.service-slider-tablet {
+    display: none;
+}
+.service-slider-tablet, .services-slider-mobile {
+    overflow: hidden;
+}
+.services-arrows {
+    display: none;
+}
 @media (max-width: 1000px) {
     .challenges .section__title {
         max-width: unset;
+    }
+    .services-arrows {
+        display: flex;
+    }
+    .service-slider-tablet {
+        display: block;
+    }
+    .swiper {
+        display: block;
+        margin-top: 50px;
+    }
+    .swiper-slide {
+        padding: 30px 15px;
     }
     .challenges {
         background-size: 140%;
@@ -443,9 +491,20 @@ header {
         display: none;
     }
     .services-block {
-        width: 650px;
+        width: 710px;
     }
-
+    .list > div {
+        padding: 5px;
+    }
+    .services-list {
+        display: none;
+    }
+    .list-item {
+        margin: 10px;
+        width: 730px;
+        height: 300px;
+        background: blueviolet;
+    }
     .services-list__item p {
         max-width: 400px;
         font-size: 22px;
@@ -520,6 +579,13 @@ header {
     .wrapper {
         max-width: 600px;
     }
+    .services-block {
+        width: 550px;
+    }
+    .services-block p {
+        font-size: 16px;
+        line-height: 25px;
+    }
     .work-steps__list {
         background-size: 42%;
         background-position-y: 45%;
@@ -550,6 +616,9 @@ header {
    .challenges .section__title {
        font-size: 22px;
    }
+    .services-block {
+        width: 480px;
+    }
     .work-steps__item h1{
         font-size: 100px;
     }
@@ -614,6 +683,12 @@ header {
     .wrapper {
         max-width: 430px;
     }
+    .services {
+        padding: 80px 0;
+    }
+    .services-block {
+        width: 400px;
+    }
     .work-steps__list {
         background-size: 61%;
         background-position-y: 40% !important;
@@ -658,15 +733,41 @@ header {
         background-size: 115%;
     }
 }
+
 @media (max-width: 478px) {
     .challenges {
         background-size: 310%;
+    }
+    .services-slider-mobile {
+        display: block;
+    }
+    .services-slider-pagination {
+        display: none;
+    }
+    .services-arrows {
+        justify-content: center;
     }
     .work-steps__list {
         background-position-x: 95%;
     }
     .present {
         background-size: 145%;
+    }
+    .service-slider-tablet {
+        display: none;
+    }
+    .services-block {
+        flex-direction: column;
+        width: 300px;
+        height: 374px;
+    }
+    .services-block img {
+        width: 248px;
+        height: 179px;
+    }
+    .services-block p {
+        font-size: 18px;
+        line-height: 25px;
     }
     .wrapper {
         max-width: 350px;

@@ -1,35 +1,41 @@
-function slickify() {
-    if (document.body.offsetWidth <= 1000) {
-        $('.services-list').slick({
-            dots: true,
-            infinite: true,
-            speed: 300,
-            slidesToShow: 1,
-            appendArrows: $('.btn'),
-            responsive: [
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                }
-            ]
-        });
+
+
+function sliderInit(classEl, breakpoint) {
+    if (document.body.offsetWidth <= breakpoint) {
+        const swiper = new Swiper(classEl, {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            spaceBetween: 30,
+
+            // If we need pagination
+            pagination: {
+                el: '.services-slider-pagination',
+                bulletActiveClass: 'active-bullet',
+                bulletClass: 'bullet',
+                clickable: true
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.services-next-slide',
+                prevEl: '.services-prev-slide',
+            }
+
+        })
+        return 1
     }
-}
-window.onresize = function () {
-    if(document.body.offsetWidth > 1000) {
-        $('.services-list').slick('unslick');
-    }
-    slickify()
+    const swiper = new Swiper(classEl, {
+        enabled: false
+    })
 }
 
-slickify()
+
+window.onresize = function () {
+   sliderInit('.service-slider-tablet', 1000)
+   sliderInit('.services-slider-mobile', 478)
+}
+
+sliderInit('.service-slider-tablet', 1000)
+sliderInit('.services-slider-mobile', 478)
+
