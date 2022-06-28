@@ -84,7 +84,7 @@ header {
     font-size: 16px;
 }
 
-.present__button:hover {
+.present__button:hover, .order__form button:hover {
     background: linear-gradient(180deg, #4772EA 0%, #1848DE 100%);
 }
 
@@ -96,9 +96,11 @@ header {
     width: 90px;
     height: 90px;
 }
+
 .present__features-item p {
     line-height: 22px;
 }
+
 .present__features-item:first-child p {
     max-width: 260px;
 }
@@ -119,30 +121,37 @@ header {
     font-size: 40px;
     max-width: 643px;
 }
+
 .principles {
     padding-top: 30px;
     padding-bottom: 80px;
 }
+
 .principles__content {
     margin-top: 75px;
 
 }
+
 .principles-list__item {
     min-height: 125px;
 }
+
 .principles-list__item h2 {
     font-size: 24px;
     margin-top: 10px;
     line-height: 31px;
     max-width: 420px;
 }
+
 .principles-list__item p {
     max-width: 630px;
     font-size: 16px;
 }
+
 .principles-list__item .icon-shadow {
     position: relative;
 }
+
 .principles-list__item:not(:last-child) .icon-shadow:after {
     content: "";
     position: absolute;
@@ -152,38 +161,47 @@ header {
     left: 50%;
     width: 1px;
 }
+
 .challenges {
     background: url("../img/challenges_bg.jpg") no-repeat;
     background-size: 100%;
     padding: 200px 0;
     max-height: 900px;
 }
+
 .challenges__content p {
     font-size: 22px;
     line-height: 35px;
     max-width: 690px;
     margin-top: 40px;
 }
+
 .work-steps {
     padding: 20vh 0;
 }
+
 .work-steps__item h1 {
     font-size: 160px;
     color: #FF8F45;
 }
+
 .work-steps__item .icon-shadow {
     width: 112px;
     height: 112px;
 }
+
 .work-steps__list {
     max-width: 83%;
 }
+
 .work-steps__item:nth-child(even) {
     align-self: flex-end;
 }
-.work-steps__item h2, .work-steps__item p  {
+
+.work-steps__item h2, .work-steps__item p {
     max-width: 330px;
 }
+
 .work-steps__item span {
     display: block;
     margin-top: 5px;
@@ -192,10 +210,12 @@ header {
 .services {
     padding: 150px 0;
 }
+
 .services-list {
     margin-top: 75px;
     gap: 20px;
 }
+
 .services-block {
     border-radius: 30px;
     width: 690px;
@@ -206,10 +226,12 @@ header {
     0px 3.38082px 4.76509px rgba(0, 7, 16, 0.035),
     0px 1.22278px 3.17016px rgba(0, 7, 16, 0.0243888);
 }
+
 .services-block:hover {
     box-shadow: unset;
     border: 1px solid #5C80E3;
 }
+
 .services-list__item {
     gap: 40px;
 
@@ -218,17 +240,20 @@ header {
 .services-list__item img {
     border-radius: 30px;
 }
+
 .services-list__item p {
     max-width: 400px;
     font-size: 22px;
     line-height: 35px;
 }
+
 .work-steps__list {
     background: url("../img/work-steps_bg.svg") no-repeat;
     background-size: 45%;
     background-position-y: 35%;
     background-position-x: 45%;
 }
+
 .order {
     background: url("../img/challenges_bg.jpg") no-repeat;
     background-size: 110%;
@@ -236,34 +261,43 @@ header {
     max-height: 950px;
     background-position: center;
 }
-.order__content {
-    margin-top: 20px;
+
+.order .section__title {
+    margin-bottom: 20px;
 }
+
 .order__content p {
     font-size: 22px;
     line-height: 35px;
     max-width: 705px;
 }
+
 .order__form a {
     text-decoration: underline;
 }
+
 .order__form {
     margin-top: 40px;
 }
-.order__form p {
+
+.order__form span {
+    display: block;
     font-size: 16px;
 
 }
+
 .order__form input, .order__form button {
     border-radius: 100px;
     padding: 20px 36px;
 }
+
 .order__form input {
     font-size: 22px;
     background: transparent;
     border: 1px solid black;
     color: #000710;
 }
+
 .order__form button {
     margin-top: 10px;
     font-size: 16px;
@@ -273,34 +307,69 @@ header {
     box-shadow: 0px 0px 35px rgba(52, 92, 218, 0.5);
 }
 
+.footer__content {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    padding-bottom: 47px;
+}
+
+.footer__agreements {
+    padding: 14px 0;
+}
+
+.agreements__list {
+    gap: 40px;
+}
+
+.agreements__list a {
+    font-size: 14px;
+    line-height: 19px;
+    color: gray;
+}
+
 @media (max-width: 1730px) {
     .challenges {
         padding: 100px 0;
     }
 }
+
 @media (max-width: 1680px) {
     .wrapper {
         max-width: 1150px;
     }
+
+    .order {
+        background-size: 125%;
+    }
+
+    .order__img {
+        width: 500px;
+    }
+
     .slick-list {
         padding: 40px 20px !important;
     }
+
     .services-list {
         gap: 40px;
     }
+
     .services-list__item p {
         font-size: 18px;
     }
+
     .services-list__item img {
         width: 150px;
     }
+
     .services-block {
         width: 550px;
     }
+
     .present__main h1 {
         font-size: 40px;
         line-height: 45px;
     }
+
     .work-steps__list {
         background-image: url("../img/work-steps-bg_tablet.svg");
         background-size: 27%;
@@ -308,12 +377,15 @@ header {
         background-position-y: 50%;
 
     }
+
     .challenges {
         padding: 150px 0;
     }
+
     .challenges__img {
         width: 450px;
     }
+
     .present__button {
         padding: 24px 40px;
     }
@@ -336,47 +408,76 @@ header {
         font-size: 17px;
         letter-spacing: unset;
     }
+
     .principles__image {
         width: 400px;
     }
+
     .principles-list__item img {
         width: 40px;
         height: 40px;
     }
+
     .priciples-list {
         gap: 10px;
     }
+
     .principles-list__item .flex-column {
         gap: 10px;
     }
+
     .principles-list__item p {
         max-width: 500px;
     }
 }
+
 @media (max-width: 1500px) {
     .challenges {
         background-size: 115%;
     }
 }
+
 @media (max-width: 1300px) {
     .present__description p {
         font-size: 10px;
         max-width: 320px;
     }
+
+    .order {
+        background-size: 150%;
+    }
+
+    .order__img {
+        width: 350px;
+    }
+
+    .order__content p {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .order__form input {
+        font-size: 16px;
+    }
+
     .services-block {
         width: 400px;
     }
+
     .services-block p {
         font-size: 14px;
         line-height: 20px;
     }
+
     .work-steps__list {
         max-width: unset;
         background-size: 30%;
     }
+
     .challenges__img {
         width: 350px;
     }
+
     .present__callback .icon-shadow {
         width: 40px;
         height: 40px;
@@ -425,17 +526,21 @@ header {
     .present__features-item p {
         font-size: 12px;
     }
+
     .principles-list__item h2 {
         font-size: 16px;
         max-width: 330px;
         line-height: 20px;
     }
+
     .section__title {
         font-size: 33px;
     }
+
     .principles-list__item {
         min-height: 80px;
     }
+
     .principles-list__item .flex-column {
         gap: 5px;
     }
@@ -444,9 +549,11 @@ header {
         max-width: 370px;
         font-size: 10px;
     }
+
     .principles__image {
         width: 320px;
     }
+
     .present__features {
         gap: 60px;
     }
@@ -463,28 +570,35 @@ header {
         max-width: 280px;
     }
 }
+
 @media (max-width: 1170px) {
     .challenges__img {
         max-width: 246px;
     }
+
     .challenges {
         background-size: 100%;
     }
 }
+
 @media (max-width: 1070px) {
     .present {
         background-size: 140%;
     }
+
     .challenges {
         background-size: 110%;
     }
 }
+
 .challenges__img-tablet, .order__img-tablet {
     display: none;
 }
+
 .swiper {
     display: none;
 }
+
 .bullet {
     width: 16px;
     height: 16px;
@@ -493,91 +607,198 @@ header {
     border: 2px solid black;
 
 }
+
 .bullet:not(:last-child) {
     margin-right: 14px;
 }
+
 .active-bullet {
     background: linear-gradient(180deg, #5C80E3 0%, #335BD9 100%);
 }
+
 .services-slider-mobile {
     display: none;
 }
+
 .service-slider-tablet {
     display: none;
 }
+
 .service-slider-tablet, .services-slider-mobile {
     overflow: hidden;
 }
+
 .services-arrows {
     display: none;
 }
+
+.contacts {
+    margin: 100px 0;
+}
+
+.geo-block {
+    margin-top: 75px;
+}
+
+.geo-info__wrapper {
+    top: 0;
+    left: 0;
+}
+
+.geo-info__wrapper .wrapper {
+    padding-left: 70px;
+}
+
+.contacts__block {
+    gap: 35px;
+    padding: 92px 36px;
+    box-shadow: 0px 27px 70px rgba(0, 7, 16, 0.07), 0px 8.13971px 21.103px rgba(0, 7, 16, 0.0456112), 0px 3.38082px 8.76509px rgba(0, 7, 16, 0.035), 0px 1.22278px 3.17016px rgba(0, 7, 16, 0.0243888);
+    border-radius: 30px;
+}
+
+.contacts-item .icon-shadow {
+    width: 90px;
+    height: 90px;
+}
+
+.contacts-item img {
+    width: 60px;
+    height: 60px;
+}
+
+.contacts-item h3, .contacts-item a {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 31px;
+    max-width: 297px;
+}
+
 @media (max-width: 1000px) {
     .challenges .section__title {
         max-width: unset;
     }
+
+    .footer__nav {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    .footer__content .wrapper {
+        align-items: flex-start !important;
+    }
+
+    footer .present__callback {
+        height: fit-content;
+    }
+
+    .order {
+        background-size: 220%;
+    }
+
+    .order__img {
+        display: none;
+    }
+
+    .order__form input {
+        font-size: 22px;
+    }
+
+    .order__form span {
+        font-size: 16px !important;
+    }
+
+    .order__content p {
+        font-size: 22px;
+        line-height: 35px;
+        max-width: 416px;
+    }
+
+    .order__img-tablet {
+        width: 320px;
+        display: block;
+    }
+
     .services-arrows {
         display: flex;
     }
+
     .service-slider-tablet {
         display: block;
     }
+
     .swiper {
         display: block;
         margin-top: 50px;
     }
+
     .swiper-slide {
         padding: 30px 15px;
     }
+
     .challenges {
         background-size: 140%;
     }
+
     .challenges__img {
         display: none;
     }
+
     .services-block {
         width: 710px;
     }
+
     .list > div {
         padding: 5px;
     }
+
     .services-list {
         display: none;
     }
+
     .list-item {
         margin: 10px;
         width: 730px;
         height: 300px;
         background: blueviolet;
     }
+
     .services-list__item p {
         max-width: 400px;
         font-size: 22px;
         line-height: 35px;
     }
+
     .challenges__img-tablet {
         display: block;
     }
+
     .challenges__content p {
         min-width: 460px;
     }
+
     .wrapper {
         max-width: 750px;
     }
+
     .present-menu__icon {
         top: 48px;
         right: 0;
     }
+
     .present__main h1 {
         line-height: 52px;
     }
+
     .present {
         background: url("../img/main_background_elecktrik_tablet.png") no-repeat;
         background-size: 100%;
         background-position-y: bottom;
     }
+
     header {
         align-items: flex-start !important;
     }
+
     .present__nav {
         display: none;
     }
@@ -596,14 +817,17 @@ header {
         align-items: center;
         flex-direction: row;
     }
+
     .principles__image {
         width: 250px;
     }
+
     .present-menu__icon {
         display: block;
         top: 48px;
         right: 45px;
     }
+
     .present-menu__icon-lie {
         display: block;
         opacity: 0;
@@ -614,6 +838,7 @@ header {
         max-width: 270px;
         line-height: 12px;
     }
+
     .present__callback {
         margin-top: 3px;
     }
@@ -623,20 +848,69 @@ header {
     .wrapper {
         max-width: 600px;
     }
+
+    footer .present__description h1 {
+        font-size: 20px !important;
+    }
+
+    footer .present__description p {
+        max-width: 250px;
+    }
+
     .services-block {
         width: 550px;
     }
+
+    .contacts__block {
+        padding: 50px 20px;
+    }
+
+    .contacts-item h3, .contacts-item a {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .contacts-item .icon-shadow {
+        width: 50px;
+        height: 50px;
+    }
+
+    .contacts-item img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .order__content p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .geo-info__wrapper .wrapper {
+        padding-left: 0;
+    }
+
+    .order {
+        background-size: 220%;
+    }
+
+    .order__img-tablet {
+        width: 150px;
+    }
+
     .services-block p {
         font-size: 16px;
         line-height: 25px;
     }
+
     .work-steps__list {
         background-size: 42%;
         background-position-y: 45%;
     }
+
     .challenges__img-tablet {
         display: none;
     }
+
     .challenges {
         background-size: 160%;
     }
@@ -644,56 +918,85 @@ header {
     .principles__image {
         display: none;
     }
+
     .present__main h1 {
         font-size: 35px;
     }
+
     .principles-list__item p {
         max-width: 510px;
         font-size: 14px;
     }
+
     .present__button {
         padding: 22px 40px;
     }
 }
 
 @media (max-width: 685px) {
-   .challenges .section__title {
-       font-size: 22px;
-   }
+    .challenges .section__title {
+        font-size: 22px;
+    }
+    .agreements__list {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 6px;
+    }
     .services-block {
         width: 480px;
     }
-    .work-steps__item h1{
+
+    footer .present__callback {
+        display: none;
+    }
+
+    .contacts-item h3 {
+        max-width: 250px;
+    }
+
+    .order {
+        background-size: 280%;
+    }
+
+    .work-steps__item h1 {
         font-size: 100px;
     }
+
     .work-steps__item .icon-shadow {
         width: 71px;
         height: 71px;
     }
+
     .work-steps__item img {
         width: 45px;
         height: 45px;
     }
+
     .work-steps__item h2 {
         font-size: 18px;
         max-width: 250px;
     }
+
     .challenges__content p {
         font-size: 18px;
     }
+
     .present {
         background-position-y: unset;
         padding-bottom: 100px;
     }
+
     .principles-list__item p {
         font-size: 12px;
         max-width: 400px;
     }
+
     .principles-list__item h2 {
         font-size: 15px;
         line-height: 19px;
         max-width: 270px;
     }
+
     .wrapper {
         max-width: 500px;
     }
@@ -711,6 +1014,10 @@ header {
         width: 20px;
     }
 
+    .geo-block iframe {
+        height: 442px;
+    }
+
     .present__callback .icon-shadow {
         width: 32px;
         height: 32px;
@@ -719,20 +1026,33 @@ header {
     .present__main h1 {
         font-size: 33px;
     }
+
     .work-steps__list {
         background-size: 35%;
     }
 }
+
 @media (max-width: 613px) {
     .wrapper {
         max-width: 430px;
     }
+
+    .order__img-tablet {
+        display: none;
+    }
+
+    .order {
+        background-size: 330%;
+    }
+
     .services {
         padding: 80px 0;
     }
+
     .services-block {
         width: 400px;
     }
+
     .work-steps__list {
         background-size: 61%;
         background-position-y: 40% !important;
@@ -748,31 +1068,39 @@ header {
     .challenges {
         background-size: 230%;
     }
+
     .challenges__content p {
         min-width: unset;
     }
+
     header {
         align-items: flex-start !important;
     }
+
     .principles-list__item p {
         max-width: 300px;
     }
+
     .present__callback {
         display: none;
     }
+
     .present__main h1 {
         font-size: 25px;
         line-height: 32px;
     }
+
     .present__button {
         padding: 19px 36px;
     }
+
     .present__features .icon-shadow, .principles-list__item .icon-shadow {
         width: 50px;
         height: 50px;
     }
 }
-@media (max-width: 530px)  {
+
+@media (max-width: 530px) {
     .present {
         background-size: 115%;
     }
@@ -782,49 +1110,84 @@ header {
     .challenges {
         background-size: 310%;
     }
+
+    .contacts-item {
+        gap: 18px;
+    }
+
+    .geo-info__wrapper > .wrapper {
+        max-width: 100%;
+    }
+
+    footer .wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer__nav {
+        font-size: 14px;
+    }
+
+    .order {
+        background-size: 390%;
+    }
+
     .services-slider-mobile {
         display: block;
     }
+
     .services-slider-pagination {
         display: none;
     }
+
     .services-arrows {
         justify-content: center;
     }
+
     .work-steps__list {
         background-position-x: 95%;
     }
+
     .present {
         background-size: 145%;
     }
+
     .service-slider-tablet {
         display: none;
     }
+
     .services-block {
         flex-direction: column;
         width: 300px;
         height: 374px;
     }
+
     .services-block img {
         width: 248px;
         height: 179px;
     }
+
     .services-block p {
         font-size: 18px;
         line-height: 25px;
     }
+
     .wrapper {
         max-width: 350px;
     }
+
     .section__title {
         font-size: 22px;
     }
+
     .principles__content {
         margin-top: 40px;
     }
+
     .principles-list__item p, .principles-list__item h2 {
         max-width: 200px;
     }
+
     .principles-list__item:not(:last-child) .icon-shadow:after {
         content: "";
         position: absolute;
@@ -834,10 +1197,12 @@ header {
         left: 50%;
         width: 1px;
     }
+
     .work-steps {
         padding: 20px 0;
     }
 }
+
 @media (max-width: 400px) {
     .present {
         background-size: 100% !important;
@@ -845,39 +1210,96 @@ header {
         background-position-y: -20vh !important;
         background: url("../img/main_bg_mobile.png") no-repeat;
     }
+
+    .order__form input, .order__form button {
+        width: 100%;
+    }
+    .footer__agreements a {
+        font-size: 10px;
+    }
+
+    .geo-info__wrapper {
+        top: 110%;
+    }
+
+    .geo-block iframe {
+        height: 200px;
+    }
+
+    .contacts__block {
+        width: 300px;
+        margin: 0 auto;
+        padding: 25px;
+    }
+
+    footer {
+        margin-top: 300px;
+    }
+
+    .contacts-item a, .contacts-item h3 {
+        font-size: 18px;
+        max-width: 175px;
+    }
+
+    .services {
+        padding-top: 130px;
+    }
+
+    .order {
+        background: url("../img/challenges_bg-mobile.jpg") no-repeat;
+        background-size: 130%;
+    }
+
     .work-steps__item h2 {
         line-height: 23px;
     }
+
     .wrapper {
         max-width: 290px;
     }
+
     .challenges {
         background-size: 430%;
     }
+
     .present__features-item p {
         max-width: 218px !important;
     }
+
     .present__button {
         width: 100%;
     }
+
     .principles {
         padding-bottom: 0;
     }
+
+    .services-block {
+        width: 268px;
+    }
+
     .work-steps__item p {
         font-size: 14px;
         line-height: 19px;
     }
 }
+
 @media (max-width: 346px) {
     .challenges {
         background: url("../img/challenges_bg-mobile.jpg") no-repeat;
         background-size: 100%;
     }
+
+    .order {
+        background-size: 150%;
+    }
+
     .present {
         background: url("../img/main_bg_mobile.png") no-repeat;
         background-size: 100%;
         background-position-y: -110px;
     }
+
     .present__description p {
         font-size: 8px;
         line-height: 9px;

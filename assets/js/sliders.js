@@ -1,41 +1,41 @@
-
+let SCREEN_WIDTH = document.body.offsetWidth
+let IS_MOBILE = SCREEN_WIDTH < 479
 
 function sliderServicesInit(classEl, breakpoint) {
-    if (document.body.offsetWidth <= breakpoint) {
-        const swiper = new Swiper(classEl, {
-            // Optional parameters
+
+    if (SCREEN_WIDTH <= breakpoint) {
+        new Swiper(classEl, {
             direction: 'horizontal',
             loop: true,
             spaceBetween: 30,
-
-            // If we need pagination
             pagination: {
                 el: '.services-slider-pagination',
                 bulletActiveClass: 'active-bullet',
                 bulletClass: 'bullet',
                 clickable: true
             },
-
-            // Navigation arrows
             navigation: {
                 nextEl: '.services-next-slide',
                 prevEl: '.services-prev-slide',
             }
 
         })
-        return 1
+        return
     }
     const swiper = new Swiper(classEl, {
         enabled: false
     })
 }
 
-
-window.onresize = function () {
-   sliderServicesInit('.service-slider-tablet', 1000)
-   sliderServicesInit('.services-slider-mobile', 478)
+function sliderServicesStart() {
+    !IS_MOBILE ? sliderServicesInit('.service-slider-tablet', 1000) : sliderServicesInit('.services-slider-mobile', 478)
 }
 
-sliderServicesInit('.service-slider-tablet', 1000)
-sliderServicesInit('.services-slider-mobile', 478)
+window.onresize = function () {
+    SCREEN_WIDTH = document.body.offsetWidth
+    IS_MOBILE = SCREEN_WIDTH < 479
+    sliderServicesStart()
+}
+
+sliderServicesStart()
 
