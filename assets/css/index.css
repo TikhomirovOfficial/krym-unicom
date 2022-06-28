@@ -229,6 +229,50 @@ header {
     background-position-y: 35%;
     background-position-x: 45%;
 }
+.order {
+    background: url("../img/challenges_bg.jpg") no-repeat;
+    background-size: 110%;
+    padding: 120px 0;
+    max-height: 950px;
+    background-position: center;
+}
+.order__content {
+    margin-top: 20px;
+}
+.order__content p {
+    font-size: 22px;
+    line-height: 35px;
+    max-width: 705px;
+}
+.order__form a {
+    text-decoration: underline;
+}
+.order__form {
+    margin-top: 40px;
+}
+.order__form p {
+    font-size: 16px;
+
+}
+.order__form input, .order__form button {
+    border-radius: 100px;
+    padding: 20px 36px;
+}
+.order__form input {
+    font-size: 22px;
+    background: transparent;
+    border: 1px solid black;
+    color: #000710;
+}
+.order__form button {
+    margin-top: 10px;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    color: white;
+    background: linear-gradient(180deg, #5C80E3 0%, #335BD9 100%);
+    box-shadow: 0px 0px 35px rgba(52, 92, 218, 0.5);
+}
+
 @media (max-width: 1730px) {
     .challenges {
         padding: 100px 0;
@@ -435,7 +479,7 @@ header {
         background-size: 110%;
     }
 }
-.challenges__img-tablet {
+.challenges__img-tablet, .order__img-tablet {
     display: none;
 }
 .swiper {

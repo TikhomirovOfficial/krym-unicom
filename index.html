@@ -513,8 +513,41 @@
     </div>
 
 </section>
+<section class="order">
+    <div class="wrapper flex-row-betw al-center">
+        <div class="order__content">
+
+            <h1 class="section__title">
+                Рассчитаем стоимость уже сегодня
+            </h1>
+            <div class="flex-row-betw">
+                <p>
+                    Максимально сэкономим ваше время и подготовим необходимый пакет услуг и итоговую цену уже сегодня. Для этого оставьте свой телефон — он остаётся только у нас, мы позвоним на него один раз для уточнения деталей и без дальнейших спам-рассылок
+                </p>
+                <img class="order__img order__img-tablet" src="assets/img/order_img.png" alt="">
+            </div>
+            <form class="order__form gap-15 flex-column" action="">
+                <input placeholder="Имя" class="" type="text">
+                <input placeholder="+7 (900) 000 00 00" class="phonesa" type="text">
+                <button class="cur-pointer fw-7">
+                    Отправить
+                </button>
+                <p class="txt-center">Заполняя форму, вы соглашаетесь на
+                    <a href="">обработку персональных данных</a>
+                </p>
+            </form>
+
+        </div>
+        <img class="order__img" src="assets/img/order_img.png" alt="">
+    </div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
 <script type="text/javascript" src="assets/js/sliders.js"></script>
+<script>
+    $(".phonesa").inputmask('9(999)-999-9999')
+</script>
 
 </body>
 </html>

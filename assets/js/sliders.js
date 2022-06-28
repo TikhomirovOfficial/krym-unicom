@@ -1,6 +1,6 @@
 
 
-function sliderInit(classEl, breakpoint) {
+function sliderServicesInit(classEl, breakpoint) {
     if (document.body.offsetWidth <= breakpoint) {
         const swiper = new Swiper(classEl, {
             // Optional parameters
@@ -32,10 +32,10 @@ function sliderInit(classEl, breakpoint) {
 
 
 window.onresize = function () {
-   sliderInit('.service-slider-tablet', 1000)
-   sliderInit('.services-slider-mobile', 478)
+   sliderServicesInit('.service-slider-tablet', 1000)
+   sliderServicesInit('.services-slider-mobile', 478)
 }
 
-sliderInit('.service-slider-tablet', 1000)
-sliderInit('.services-slider-mobile', 478)
+sliderServicesInit('.service-slider-tablet', 1000)
+sliderServicesInit('.services-slider-mobile', 478)
 
