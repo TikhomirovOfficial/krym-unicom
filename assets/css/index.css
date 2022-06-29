@@ -673,6 +673,61 @@ header {
     max-width: 297px;
 }
 
+.reviews {
+    padding: 130px 0;
+}
+
+.review-item {
+    box-shadow: 0px 27px 70px rgba(0, 7, 16, 0.07),
+    0px 8.13971px 21.103px rgba(0, 7, 16, 0.0456112),
+    0px 3.38082px 8.76509px rgba(0, 7, 16, 0.035),
+    0px 1.22278px 3.17016px rgba(0, 7, 16, 0.0243888);
+    border-radius: 30px;
+    padding: 60px 50px;
+    width: 690px !important;
+
+}
+.reviews-slide {
+    width: 690px !important;
+}
+
+.review-item__header {
+    gap: 40px;
+}
+
+.review-logo {
+    width: 110px;
+    height: 110px;
+}
+
+.review-info p {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.review-info h3 {
+    font-size: 24px;
+    line-height: 31px;
+    max-width: 380px;
+}
+.reviews-slider {
+    margin-top: 75px;
+    margin-bottom: 65px;
+
+}
+.reviews .section__title {
+    max-width: 707px;
+}
+.reviews {
+    overflow-x: hidden;
+}
+.review-text {
+    font-size: 22px;
+    line-height: 35px;
+    margin-top: 40px;
+    max-width: 590px;
+}
+
 @media (max-width: 1000px) {
     .challenges .section__title {
         max-width: unset;
@@ -718,7 +773,7 @@ header {
         display: block;
     }
 
-    .services-arrows {
+    .slider-arrows {
         display: flex;
     }
 
@@ -937,11 +992,13 @@ header {
     .challenges .section__title {
         font-size: 22px;
     }
+
     .agreements__list {
         flex-direction: column;
         align-items: flex-start !important;
         gap: 6px;
     }
+
     .services-block {
         width: 480px;
     }
@@ -1136,11 +1193,11 @@ header {
         display: block;
     }
 
-    .services-slider-pagination {
+    .slider-pagination {
         display: none;
     }
 
-    .services-arrows {
+    .slider-arrows {
         justify-content: center;
     }
 
@@ -1214,6 +1271,7 @@ header {
     .order__form input, .order__form button {
         width: 100%;
     }
+
     .footer__agreements a {
         font-size: 10px;
     }
