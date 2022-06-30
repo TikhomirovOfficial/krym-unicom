@@ -684,6 +684,7 @@ header {
     0px 1.22278px 3.17016px rgba(0, 7, 16, 0.0243888);
     border-radius: 30px;
     padding: 60px 50px;
+    min-height: 480px;
     width: 690px !important;
 
 }
@@ -731,6 +732,22 @@ header {
 @media (max-width: 1000px) {
     .challenges .section__title {
         max-width: unset;
+    }
+    .reviews {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+    .reviews-slide {
+        width: 750px !important;
+        padding: 10px;
+    }
+    .review-item {
+        margin: 0 auto;
+        width: 730px !important;
+        box-shadow: 0px 27px 10px rgba(0, 7, 16, 0.02),
+        0px 8.13971px 21.103px rgba(0, 7, 16, 0.0456112),
+        0px 3.38082px 8.76509px rgba(0, 7, 16, 0.035),
+        0px 1.22278px 3.17016px rgba(0, 7, 16, 0.0243888);
     }
 
     .footer__nav {
@@ -903,7 +920,15 @@ header {
     .wrapper {
         max-width: 600px;
     }
-
+    .reviews {
+        max-width: 600px;
+    }
+    .review-item {
+        width: 580px !important;
+    }
+    .reviews-slide {
+        width: 600px !important;
+    }
     footer .present__description h1 {
         font-size: 20px !important;
     }
@@ -987,12 +1012,41 @@ header {
         padding: 22px 40px;
     }
 }
+@media (max-width: 738px) {
+    .present {
 
+        background-position-y: top;
+    }
+}
 @media (max-width: 685px) {
     .challenges .section__title {
         font-size: 22px;
     }
-
+    .reviews {
+        max-width: 500px;
+    }
+    .review-item {
+        width: 480px !important;
+    }
+    .review-text {
+        font-size: 16px;
+        line-height: 22px;
+        margin-top: 24px;
+    }
+    .review-logo {
+        width: 80px;
+        height: 80px;
+    }
+    .review-info p {
+        font-size: 10px;
+    }
+    .review-item__header h3 {
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .reviews-slide {
+        width: 500px !important;
+    }
     .agreements__list {
         flex-direction: column;
         align-items: flex-start !important;
@@ -1097,7 +1151,15 @@ header {
     .order__img-tablet {
         display: none;
     }
-
+    .reviews {
+        max-width: 430px;
+    }
+    .reviews-slide {
+        width: 430px;
+    }
+    .review-item {
+        width: 410px !important;
+    }
     .order {
         background-size: 330%;
     }
@@ -1232,6 +1294,16 @@ header {
     .wrapper {
         max-width: 350px;
     }
+    .reviews {
+        max-width: 350px;
+    }
+    .reviews-slide {
+        width: 350px;
+    }
+    .review-item {
+        width: 330px !important;
+        min-height: 425px;
+    }
 
     .section__title {
         font-size: 22px;
@@ -1267,7 +1339,26 @@ header {
         background-position-y: -20vh !important;
         background: url("../img/main_bg_mobile.png") no-repeat;
     }
+    .reviews {
+        max-width: 290px;
+    }
+    .reviews-slide {
+        width: 290px;
+    }
+    .review-item {
+        width: 270px !important;
+        padding: 30px 20px;
 
+    }
+    .reviews-slider {
+        margin-bottom: 35px;
+    }
+    .services-arrows {
+        margin-top: 20px;
+    }
+    .review-item__header {
+        gap: 20px;
+    }
     .order__form input, .order__form button {
         width: 100%;
     }

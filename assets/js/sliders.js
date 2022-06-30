@@ -37,7 +37,7 @@ function sliderReviewsInit() {
         loop: true,
         spaceBetween: 30,
         slideClass: 'reviews-slide',
-        slidesPerView: 4,
+        slidesPerView: 1,
         scrollbar: false,
         wrapperClass: 'reviews-slider__wrapper',
         pagination: {
@@ -45,6 +45,15 @@ function sliderReviewsInit() {
             bulletActiveClass: 'active-bullet',
             bulletClass: 'bullet',
             clickable: true
+        },
+        breakpoints: {
+          1000: {
+              slidesPerView: 3
+          },
+          1700: {
+              slidesPerView: 4
+          }
+
         },
         navigation: {
             nextEl: '.reviews-next-slide',
@@ -58,6 +67,7 @@ window.onresize = function () {
     SCREEN_WIDTH = document.body.offsetWidth
     IS_MOBILE = SCREEN_WIDTH < 479
     sliderServicesStart()
+    sliderReviewsInit()
 }
 
 sliderServicesStart()
