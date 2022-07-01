@@ -325,6 +325,40 @@ header {
     line-height: 19px;
     color: gray;
 }
+.sertificates {
+    padding: 130px 0;
+}
+.sertificates-slider {
+    margin-top: 75px;
+}
+.sertificate-item {
+    cursor: pointer;
+    border: 1px transparent solid;
+    box-shadow: 0px 27px 70px rgba(0, 7, 16, 0.07), 0px 8.13971px 21.103px rgba(0, 7, 16, 0.0456112), 0px 3.38082px 8.76509px rgba(0, 7, 16, 0.035), 0px 1.22278px 3.17016px rgba(0, 7, 16, 0.0243888);
+}
+.scale-block {
+    top: 0;
+    right: 0;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    background: rgba(255, 255, 255, 0.80);
+}
+.sertificate-item:hover .scale-block {
+    opacity: 1;
+    visibility: visible;
+}
+.scale-block img{
+    width: 82px !important;
+    height: 82px !important;
+}
+.sertificate-item img, .sertificate-item {
+    width: 430px;
+    height: 540px;
+    border-radius: 30px;
+}
 
 @media (max-width: 1730px) {
     .challenges {
@@ -336,7 +370,10 @@ header {
     .wrapper {
         max-width: 1150px;
     }
-
+    .sertificate-item, .sertificate-item img {
+        width: 355px;
+        height: 435px;
+    }
     .order {
         background-size: 125%;
     }
@@ -435,12 +472,19 @@ header {
     .challenges {
         background-size: 115%;
     }
+    .present {
+        background-size: 110%;
+    }
 }
 
 @media (max-width: 1300px) {
     .present__description p {
         font-size: 10px;
         max-width: 320px;
+    }
+    .sertificate-item img, .sertificate-item {
+        width: 269px;
+        height: 330px;
     }
 
     .order {
@@ -730,6 +774,14 @@ header {
 }
 
 @media (max-width: 1000px) {
+    .sertificate-item img, .sertificate-item {
+        width: 288px;
+        height: 355px;
+    }
+    .sertificate-item img, .sertificate-item {
+        width: 234px;
+        height: 286px;
+    }
     .challenges .section__title {
         max-width: unset;
     }
@@ -915,10 +967,42 @@ header {
         margin-top: 3px;
     }
 }
-
+.sertificates-arrows {
+    display: none;
+}
+.sertificates-slider__wrapper {
+    display: none;
+}
 @media (max-width: 830px) {
+    .sertificates-slider__wrapper {
+        display: flex;
+    }
+    .sertificates-items {
+        display: none;
+    }
+    .sertificates-arrows {
+        display: flex;
+    }
     .wrapper {
         max-width: 600px;
+    }
+    .sertificates-slider {
+        overflow: hidden;
+    }
+    .sertificate-item img, .sertificate-item {
+        width: 272px;
+        height: 342px;
+    }
+    .sertificate-item {
+        box-shadow: 0px 5px 20px rgb(0 7 16 / 2%), 0px 5.13971px 4.103px rgb(0 7 16 / 5%), 0px 3.38082px 8.76509px rgb(0 7 16 / 4%), 0px 1.22278px 3.17016px rgb(0 7 16 / 2%)
+    }
+    .sertificates-slide {
+        padding: 15px 0;
+    }
+    .sertificates-slider__wrapper {
+        display: flex;
+        gap: 20px;
+        flex-wrap: unset !important;
     }
     .reviews {
         max-width: 600px;
@@ -1018,15 +1102,26 @@ header {
         background-position-y: top;
     }
 }
+.sertificates-arrows {
+    margin-top: 50px;
+}
 @media (max-width: 685px) {
     .challenges .section__title {
         font-size: 22px;
     }
+    .sertificate-item img, .sertificate-item {
+        width: 221px;
+        height: 267px;
+    }
     .reviews {
         max-width: 500px;
     }
+    .sertificates {
+        padding: 40px 0;
+    }
     .review-item {
         width: 480px !important;
+        min-height: 400px;
     }
     .review-text {
         font-size: 16px;
@@ -1147,7 +1242,10 @@ header {
     .wrapper {
         max-width: 430px;
     }
-
+    .sertificate-item img, .sertificate-item {
+        width: 186px;
+        height: 227px;
+    }
     .order__img-tablet {
         display: none;
     }
@@ -1155,7 +1253,7 @@ header {
         max-width: 430px;
     }
     .reviews-slide {
-        width: 430px;
+        width: 430px !important;
     }
     .review-item {
         width: 410px !important;
@@ -1229,6 +1327,10 @@ header {
     .challenges {
         background-size: 310%;
     }
+    .sertificate-item img, .sertificate-item {
+        width: 332px;
+        height: 407px;
+    }
 
     .contacts-item {
         gap: 18px;
@@ -1298,7 +1400,7 @@ header {
         max-width: 350px;
     }
     .reviews-slide {
-        width: 350px;
+        width: 350px !important;
     }
     .review-item {
         width: 330px !important;
@@ -1335,19 +1437,24 @@ header {
 @media (max-width: 400px) {
     .present {
         background-size: 100% !important;
-        padding-bottom: 100px;
+        padding-bottom: 130px;
         background-position-y: -20vh !important;
         background: url("../img/main_bg_mobile.png") no-repeat;
+    }
+    .sertificate-item img, .sertificate-item {
+        width: 272px;
+        height: 337px;
     }
     .reviews {
         max-width: 290px;
     }
     .reviews-slide {
-        width: 290px;
+        width: 289px !important;
     }
     .review-item {
-        width: 270px !important;
+        width: 271px !important;
         padding: 30px 20px;
+        box-shadow: 0px 5px 20px rgb(0 7 16 / 2%), 0px 5.13971px 4.103px rgb(0 7 16 / 5%), 0px 3.38082px 8.76509px rgb(0 7 16 / 4%), 0px 1.22278px 3.17016px rgb(0 7 16 / 2%);
 
     }
     .reviews-slider {

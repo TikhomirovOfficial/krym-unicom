@@ -1,5 +1,6 @@
 let SCREEN_WIDTH = document.body.offsetWidth
 let IS_MOBILE = SCREEN_WIDTH < 479
+let IS_TABLET = SCREEN_WIDTH < 830
 
 function sliderServicesInit(classEl, breakpoint) {
 
@@ -47,12 +48,12 @@ function sliderReviewsInit() {
             clickable: true
         },
         breakpoints: {
-          1000: {
-              slidesPerView: 3
-          },
-          1700: {
-              slidesPerView: 4
-          }
+            1000: {
+                slidesPerView: 3
+            },
+            1700: {
+                slidesPerView: 4
+            }
 
         },
         navigation: {
@@ -63,13 +64,47 @@ function sliderReviewsInit() {
     })
 }
 
+function sliderSertificatesInit() {
+   IS_TABLET ? new Swiper('.sertificates-slider', {
+        direction: 'horizontal',
+        loop: true,
+        spaceBetween: 20,
+        slideClass: 'sertificates-slide',
+        slidesPerView: 1,
+        scrollbar: false,
+        wrapperClass: 'sertificates-slider__wrapper',
+        pagination: {
+            el: '.sertificates-slider-pagination',
+            bulletActiveClass: 'active-bullet',
+            bulletClass: 'bullet',
+            clickable: true
+        },
+        breakpoints: {
+            478: {
+                slidesPerView: 2
+            }
+        },
+        navigation: {
+            nextEl: '.sertificates-next-slide',
+            prevEl: '.sertificates-prev-slide',
+        }
+
+    }) : new Swiper('.sertificates-slider', {
+       direction: 'horizontal',
+       init: false
+   })
+}
+
+function slidersStart() {
+    sliderServicesStart()
+    sliderReviewsInit()
+    sliderSertificatesInit()
+}
+
 window.onresize = function () {
     SCREEN_WIDTH = document.body.offsetWidth
     IS_MOBILE = SCREEN_WIDTH < 479
-    sliderServicesStart()
-    sliderReviewsInit()
+    IS_TABLET = SCREEN_WIDTH < 830
+    slidersStart()
 }
-
-sliderServicesStart()
-sliderReviewsInit()
-
+slidersStart()
