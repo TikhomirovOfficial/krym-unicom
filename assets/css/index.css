@@ -7,22 +7,11 @@ body {
     margin: 0 auto;
 }
 
-.present {
-    background: url("../img/main_background_electrik.png") no-repeat;
-    background-size: 100%;
-    padding-bottom: 240px;
-}
 
 
-@media (min-width: 1900px) {
-    .present {
 
-    }
-}
 
-@media (max-width: 1675px) {
 
-}
 
 .icon-shadow {
     display: flex;
@@ -421,6 +410,7 @@ header {
     .present__main h1 {
         font-size: 40px;
         line-height: 45px;
+        max-width: 750px;
     }
 
     .work-steps__list {
@@ -488,9 +478,20 @@ header {
         background-size: 115%;
     }
     .present {
-        background-size: 110%;
+        background-size: 110% !important;
     }
 
+}
+
+@media (max-width: 1300px) {
+    .present {
+        background-size: 117% !important;
+    }
+}
+@media (max-width: 1070px) {
+    .present {
+        background-size: 140% !important;
+    }
 }
 
 @media (max-width: 1300px) {
@@ -556,9 +557,7 @@ header {
         max-width: 900px;
     }
 
-    .present {
-        background-size: 117%;
-    }
+
 
     .present__callback {
         gap: 10px;
@@ -644,11 +643,21 @@ header {
         background-size: 100%;
     }
 }
-
-@media (max-width: 1070px) {
+.present {
+    background-size: 100%;
+    padding-bottom: 240px;
+    background-repeat: no-repeat;
+}
+@media (max-width: 400px) {
     .present {
-        background-size: 140%;
+        background-size: 100% !important;
+        padding-bottom: 130px;
+        background-position-y: -20vh !important;
+        background-image: url(../img/main_bg_mobile.png) !important;
     }
+}
+@media (max-width: 1070px) {
+
 
     .challenges {
         background-size: 110%;
@@ -984,11 +993,7 @@ header {
         line-height: 52px;
     }
 
-    .present {
-        background: url("../img/main_background_elecktrik_tablet.png") no-repeat;
-        background-size: 100%;
-        background-position-y: bottom;
-    }
+
 
     header {
         align-items: flex-start !important;
@@ -1177,12 +1182,8 @@ header {
         padding: 22px 40px;
     }
 }
-@media (max-width: 738px) {
-    .present {
 
-        background-position-y: top;
-    }
-}
+
 .sertificates-arrows {
     margin-top: 50px;
 }
@@ -1268,10 +1269,7 @@ header {
         font-size: 18px;
     }
 
-    .present {
-        background-position-y: unset;
-        padding-bottom: 100px;
-    }
+
 
     .principles-list__item p {
         font-size: 12px;
@@ -1401,11 +1399,6 @@ header {
     }
 }
 
-@media (max-width: 530px) {
-    .present {
-        background-size: 115%;
-    }
-}
 
 @media (max-width: 478px) {
     .challenges {
@@ -1453,9 +1446,6 @@ header {
         background-position-x: 95%;
     }
 
-    .present {
-        background-size: 145%;
-    }
 
     .service-slider-tablet {
         display: none;
@@ -1525,16 +1515,23 @@ header {
     height: 25px !important;
     margin-bottom: 8px;
 }
+.contacts-item .icon-shadow {
+    position: relative;
+}
+.contacts-item:not(:last-child) .icon-shadow:after {
+    content: "";
+    position: absolute;
+    background: #FF8F45;
+    height: 60px;
+    top: 100%;
+    left: 50%;
+    width: 1px;
+}
 @media (max-width: 400px) {
     .modal-menu {
         padding: 60px 20px;
     }
-    .present {
-        background-size: 100% !important;
-        padding-bottom: 130px;
-        background-position-y: -20vh !important;
-        background: url("../img/main_bg_mobile.png") no-repeat;
-    }
+
     .sertificate-item img, .sertificate-item {
         width: 272px;
         height: 337px;
@@ -1648,11 +1645,7 @@ header {
         background-size: 150%;
     }
 
-    .present {
-        background: url("../img/main_bg_mobile.png") no-repeat;
-        background-size: 100%;
-        background-position-y: -110px;
-    }
+
 
     .present__description p {
         font-size: 8px;
