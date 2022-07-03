@@ -14,10 +14,10 @@
 <body>
 <div class="bg-white p-fix modal-menu flex-column jc-center">
     <nav class="flex-column gap-20">
-        <a href="">Главная</a>
-        <a href="">Услуги</a>
-        <a href="">Выполненные работы</a>
-        <a href="">Контакты</a>
+        <a href="/">Главная</a>
+        <a href="#services">Услуги</a>
+        <a href="#projects">Выполненные работы</a>
+        <a href="#contacts">Контакты</a>
     </nav>
     <a href="" class="present__callback d-f al-center gap-20">
         <div class="icon-shadow">
@@ -47,16 +47,16 @@
             <nav class="fw-5">
                 <ul class="present__nav d-f gap-30">
                     <li>
-                        <a href="">Главная</a>
+                        <a href="/">Главная</a>
                     </li>
                     <li>
-                        <a href="">Услуги</a>
+                        <a href="#services">Услуги</a>
                     </li>
                     <li>
-                        <a href="">Выполненные работы</a>
+                        <a href="#projects">Выполненные работы</a>
                     </li>
                     <li>
-                        <a href="">Контакты</a>
+                        <a href="#contacts">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -85,7 +85,7 @@
                 неполадки оборудования
                 в день обращения
             </h1>
-            <a class="c-white fw-7 d-b txt-center present__button" href="">
+            <a class="c-white fw-7 d-b txt-center present__button" href="#order">
                 Рассчитать смету
             </a>
         </div>
@@ -322,7 +322,7 @@
     </div>
 </section>
 <section class="services">
-    <div class="wrapper">
+    <div id="services"  class="wrapper">
         <h1 class="section__title">
             Все услуги Юником-крым
         </h1>
@@ -541,7 +541,7 @@
 
 </section>
 <section class="order">
-    <div class="wrapper flex-row-betw al-center">
+    <div id="order"  class="wrapper flex-row-betw al-center">
         <div class="order__content">
 
             <h1 class="section__title">
@@ -570,7 +570,7 @@
         <img class="order__img" src="assets/img/order_img.png" alt="">
     </div>
 </section>
-<section class="reviews">
+<section id="works" class="reviews">
     <div class="wrapper">
         <h1 class="section__title">
             Кто уже доверился Юником Крым
@@ -770,7 +770,7 @@
     </div>
 </div>
 
-<section class="contacts">
+<section id="contacts" class="contacts">
     <div class="wrapper">
         <h1 class="section__title">
             Контакты
@@ -883,6 +883,7 @@
 <script type="text/javascript" src="assets/js/sliders.js"></script>
 <script src="assets/js/maskPhoneInput.js"></script>
 <script src="assets/js/modals.js"></script>
+<script src="assets/js/fadeScroll.js"></script>
 
 </body>
 </html>
