@@ -29,9 +29,15 @@
         background-size: 205% !important;
     }
 }
+
 @media (max-width: 400px){
     .present {
         background-size: 100% !important;
         background-image: url(../img/main_bg_mobile.png) !important;
+    }
+}
+@media (max-width: 369px) {
+    .present {
+        background-size: 110% !important;
     }
 }

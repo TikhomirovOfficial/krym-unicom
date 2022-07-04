@@ -488,17 +488,17 @@ header {
 }
 @media (max-width: 1500px) {
     .challenges {
-        background-size: 115%;
+        background-size: 120%;
     }
     .present {
-        background-size: 115% !important;
+        background-size: 120% !important;
     }
 
 }
 
 @media (max-width: 1300px) {
     .present {
-        background-size: 117% !important;
+        background-size: 123% !important;
     }
 }
 @media (max-width: 1070px) {
@@ -539,12 +539,12 @@ header {
     }
 
     .services-block {
-        width: 400px;
+        width: 425px;
     }
 
     .services-block p {
-        /*font-size: 14px;*/
-        /*line-height: 20px;*/
+        font-size: 16px;
+        line-height: 20px;
     }
 
     .work-steps__list {
@@ -604,9 +604,9 @@ header {
     }
 
     .principles-list__item h2 {
-        /*font-size: 16px;*/
+        font-size: 18px;
         max-width: 330px;
-        /*line-height: 20px;*/
+        line-height: 22px;
     }
 
     .section__title {
@@ -1051,6 +1051,9 @@ header {
     .present__callback {
         margin-top: 3px;
     }
+    .section__title {
+        line-height: 45px;
+    }
 }
 .sertificates-arrows {
     display: none;
@@ -1281,6 +1284,7 @@ header {
     .work-steps__item h2 {
         font-size: 18px;
         max-width: 250px;
+        line-height: 24px;
     }
 
     .challenges__content p {
@@ -1501,6 +1505,7 @@ header {
 
     .section__title {
         font-size: 22px;
+        line-height: 30px;
     }
 
     .principles__content {
@@ -1652,16 +1657,22 @@ header {
         line-height: 19px;
     }
 }
-
+@media (max-width: 369px) {
+    .challenges {
+        background-size: 475% !important;
+    }
+    .order {
+        background-size: 140%;
+    }
+}
 @media (max-width: 346px) {
     .challenges {
         background: url("../img/challenges_bg-mobile.jpg") no-repeat;
         background-size: 100%;
+        background-position-y: center;
     }
 
-    .order {
-        background-size: 150%;
-    }
+
 
 
 

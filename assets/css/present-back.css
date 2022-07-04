@@ -27,6 +27,11 @@
 }
 @media (max-width: 478px) {
     .present {
+        background-size: 135% !important;
+    }
+}
+@media (max-width: 450px) {
+    .present {
         background-size: 145% !important;
     }
 }
@@ -34,6 +39,11 @@
     .present {
         background-size: 100% !important;
         padding-bottom: 130px;
+    }
+}
+@media (max-width: 369px) {
+    .present {
+        background-size: 110% !important;
     }
 }
 

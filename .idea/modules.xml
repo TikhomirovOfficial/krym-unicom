@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/krym-unicom.iml" filepath="$PROJECT_DIR$/.idea/krym-unicom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../tikorganizer/.idea/tikorganizer.iml" filepath="$PROJECT_DIR$/../tikorganizer/.idea/tikorganizer.iml" />
     </modules>
   </component>
 </project>
