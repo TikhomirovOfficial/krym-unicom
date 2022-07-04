@@ -108,6 +108,7 @@ header {
 
 .section__title {
     font-size: 40px;
+    line-height: 52px;
     max-width: 643px;
 }
 
@@ -127,6 +128,7 @@ header {
 
 .principles-list__item h2 {
     font-size: 24px;
+    font-weight: 600;
     margin-top: 10px;
     line-height: 31px;
     max-width: 420px;
@@ -187,12 +189,20 @@ header {
     align-self: flex-end;
 }
 
-.work-steps__item h2, .work-steps__item p {
+.work-steps__item h2{
     max-width: 330px;
+    font-weight: 600;
+    line-height: 31px;
+}
+.work-steps__item p {
+    max-width: 330px;
+    line-height: 22px;
 }
 
 .work-steps__item span {
     display: block;
+    font-size: 14px;
+    line-height: 19px;
     margin-top: 5px;
 }
 
@@ -396,7 +406,8 @@ header {
     }
 
     .services-list__item p {
-        font-size: 18px;
+        font-size: 20px;
+        line-height: 28px;
     }
 
     .services-list__item img {
@@ -406,11 +417,13 @@ header {
     .services-block {
         width: 550px;
     }
-
+    .present {
+        background-size: 105% !important;
+    }
     .present__main h1 {
-        font-size: 40px;
-        line-height: 45px;
-        max-width: 750px;
+        /*font-size: 40px;*/
+        /*line-height: 45px;*/
+        /*max-width: 750px;*/
     }
 
     .work-steps__list {
@@ -478,7 +491,7 @@ header {
         background-size: 115%;
     }
     .present {
-        background-size: 110% !important;
+        background-size: 115% !important;
     }
 
 }
@@ -517,8 +530,8 @@ header {
     }
 
     .order__content p {
-        font-size: 18px;
-        line-height: 23px;
+        /*font-size: 18px;*/
+        /*line-height: 23px;*/
     }
 
     .order__form input {
@@ -530,8 +543,8 @@ header {
     }
 
     .services-block p {
-        font-size: 14px;
-        line-height: 20px;
+        /*font-size: 14px;*/
+        /*line-height: 20px;*/
     }
 
     .work-steps__list {
@@ -591,9 +604,9 @@ header {
     }
 
     .principles-list__item h2 {
-        font-size: 16px;
+        /*font-size: 16px;*/
         max-width: 330px;
-        line-height: 20px;
+        /*line-height: 20px;*/
     }
 
     .section__title {

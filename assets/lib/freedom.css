@@ -267,9 +267,14 @@
 }
 /*BASE SETTINGS*/
 * {
+    hyphenate-limit-chars: 2;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background-repeat: no-repeat !important;
 }
 
 body {
@@ -292,4 +297,4 @@ input, button, select, textarea {
     border: unset;
     outline: none;
 }
-input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none;}
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
