@@ -714,12 +714,8 @@ header {
 }
 
 .geo-info__wrapper {
-    top: 0;
-    left: 0;
-}
-
-.geo-info__wrapper .wrapper {
-    padding-left: 70px;
+    top: 10%;
+    left: 20vw;
 }
 
 .contacts__block {
@@ -1056,6 +1052,11 @@ header {
     }
 }
 @media (max-width: 830px) {
+    .geo-info__wrapper {
+        top: 25%;
+        left: 110px;
+    }
+
     .sertificates-slider__wrapper {
         display: flex;
     }
@@ -1188,6 +1189,10 @@ header {
     margin-top: 50px;
 }
 @media (max-width: 685px) {
+    .geo-info__wrapper {
+        top: 15%;
+        left: 60px;
+    }
     .challenges .section__title {
         font-size: 22px;
     }
@@ -1531,7 +1536,10 @@ header {
     .modal-menu {
         padding: 60px 20px;
     }
-
+    .geo-info__wrapper {
+        top: 90%;
+        left: 8%;
+    }
     .sertificate-item img, .sertificate-item {
         width: 272px;
         height: 337px;
@@ -1569,9 +1577,6 @@ header {
         font-size: 10px;
     }
 
-    .geo-info__wrapper {
-        top: 110%;
-    }
 
     .geo-block iframe {
         height: 200px;
