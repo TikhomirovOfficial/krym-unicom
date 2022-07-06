@@ -78,7 +78,12 @@ header {
 }
 
 .present__features {
-    gap: 100px;
+    gap: 70px;
+}
+@media (min-width: 2000px) {
+    .present__features {
+        gap: 40px;
+    }
 }
 
 .present__features .icon-shadow, .principles__content .icon-shadow {
@@ -95,7 +100,7 @@ header {
 }
 
 .present__features-item:nth-child(2) p {
-    max-width: 280px;
+    max-width: 270px;
 }
 
 .present__features-item:nth-child(3) p {
@@ -712,6 +717,7 @@ header {
 
 .active-bullet {
     background: linear-gradient(180deg, #5C80E3 0%, #335BD9 100%);
+    border: 1px solid #335BD9;
 }
 
 .services-slider-mobile {
