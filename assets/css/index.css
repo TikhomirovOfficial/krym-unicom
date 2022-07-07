@@ -7,12 +7,6 @@ body {
     margin: 0 auto;
 }
 
-
-
-
-
-
-
 .icon-shadow {
     display: flex;
     align-items: center;
@@ -37,6 +31,42 @@ header {
     font-size: 14px;
 }
 
+@media (min-width: 1950px) {
+    .present__main {
+        margin-top: 6vw !important;
+        margin-bottom: 6vw !important;
+    }
+    .challenges {
+        max-height: unset !important;
+        padding-top: 12vw !important;
+        padding-bottom: 10vw !important;
+    }
+    .work-steps, .order {
+        padding: 10vw 0 !important;
+    }
+}
+@media (min-width: 2175px) {
+    .present__main {
+        margin-top: 8vw !important;
+        margin-bottom: 8vw !important;
+    }
+    .order {
+        max-height: unset !important;
+    }
+}
+@media (min-width: 2455px) {
+    .present__main {
+        margin-top: 9vw !important;
+        margin-bottom: 9vw !important;
+    }
+    .present {
+        padding-bottom: 13vw !important;
+    }
+    .challenges {
+        padding-top: 14vw !important;
+        padding-bottom: 12vw !important;
+    }
+}
 .present__callback b {
     font-size: 18px;
     letter-spacing: 1px;
