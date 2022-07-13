@@ -1,9 +1,9 @@
 .present {
-    background-image: url(../img/main_background_electrik.png);
+    background-image: url(../img/main_background_electrik.jpg);
 }
 @media (max-width: 1000px) {
     .present {
-        background-image: url(../img/main_background_elecktrik_tablet.png);
+        background-image: url(../img/main_background_elecktrik_tablet.jpg);
         background-size: 100% !important;
         background-position-y: bottom;
     }

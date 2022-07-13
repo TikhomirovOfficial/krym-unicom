@@ -33,7 +33,7 @@
 @media (max-width: 400px){
     .present {
         background-size: 100% !important;
-        background-image: url(../img/main_bg_mobile.png) !important;
+        background-image: url(../img/main_bg_mobile.jpg) !important;
     }
 }
 @media (max-width: 369px) {
